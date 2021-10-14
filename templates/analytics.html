@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+<h3>
+    <div class = "text-light">
+       <center> Analytics
+           <br>
+           
+           {% if chart %}
+           <img src = "data:image/png;base64, {{chart | safe}}">
+           {% endif %}
+        </div> 
+    </center>
+</h3>
+
+
+
+
+
+
+
+
+
+
+{% endblock content%}
